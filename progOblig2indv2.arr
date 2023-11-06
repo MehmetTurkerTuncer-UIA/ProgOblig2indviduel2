@@ -53,8 +53,10 @@ end
 
 #to print table with ny row + sum
 ny-row = get-row(table-sum, 0)
-add-row(transform-energi-newtable, ny-row)
+table-sammen = add-row(transform-energi-newtable, ny-row)
 
 #to show bar-chart
 bar-chart(transform-energi-newtable, "komponent", "energi")
 bar-chart(table-sum, "komponent", "energi")
+bar-chart(table-sammen, "komponent", "energi")
+
